@@ -17,13 +17,11 @@ public class LinkText {
 		
 		String linktextName = driver.findElement(By.linkText("Page One")).getText();
 		System.out.println("Link Name:- "+ linktextName);
-		
 		/*
 		WebElement Clicklink = driver.findElement(By.linkText("Page One"));
 		Clicklink.click();
 		Thread.sleep(4000);
 		*/
-		driver.close();
-		
+		driver.close();	
 	}
 }

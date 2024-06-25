@@ -15,16 +15,13 @@ public class TagName {
 			chrometesting.setBinary("C:\\DriverPath\\ChromeTesting\\chrome-win64\\chrome.exe");
 			WebDriver driver = new ChromeDriver(chrometesting);
 			driver.get("https://omayo.blogspot.com");
+			
 			//How Many Links in the Given Website and Print them 
 			List<WebElement> Links = driver.findElements(By.tagName("a"));
 			System.out.println("Links of count:-" + Links.size());
-			
 			for(WebElement link : Links) {
 				System.out.println("Link Name:- " + link.getText());
 			}
-			
-			
-			
 			
 			//Count of the Headings And Print The HeadingText
 			/**
