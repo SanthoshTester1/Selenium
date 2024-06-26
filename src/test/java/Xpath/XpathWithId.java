@@ -29,6 +29,7 @@ public class XpathWithId {
 		js.executeScript("window.scrollBy(0,300)");
 		js.executeScript("arguments[0].setAttribute('style', 'border:4px solid green ; background :lightyellow')", ele);
 		System.out.println("hi");
+		System.out.println("Bye");
 	}
 	
 }
