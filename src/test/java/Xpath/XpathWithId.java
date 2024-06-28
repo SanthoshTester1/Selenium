@@ -23,7 +23,6 @@ public class XpathWithId {
 		Thread.sleep(4000);
 		driver.close();
 	}
-	
 	public static void highlight(WebElement ele){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,300)");
@@ -32,8 +31,5 @@ public class XpathWithId {
 		System.out.println("Bye");
 		System.out.println("TestEngineer");
 		System.out.println("Developer");
-
 	}
-	
-	
 }
