@@ -7,10 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-
-
 public class XpathWithId {
 	static WebDriver driver;
+
 	public static void main(String[] args) throws InterruptedException {
 		ChromeOptions chrometesting = new ChromeOptions();
 		chrometesting.setBinary("C:\\DriverPath\\ChromeTesting\\chrome-win64\\chrome.exe");
@@ -23,8 +22,9 @@ public class XpathWithId {
 		Thread.sleep(4000);
 		driver.close();
 	}
-	public static void highlight(WebElement ele){
-		JavascriptExecutor js = (JavascriptExecutor)driver;
+
+	public static void highlight(WebElement ele) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,300)");
 		js.executeScript("arguments[0].setAttribute('style', 'border:4px solid green ; background :lightyellow')", ele);
 		System.out.println("hi");
